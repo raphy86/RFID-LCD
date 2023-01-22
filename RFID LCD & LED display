@@ -99,15 +99,3 @@ void DisplayInvalid() {
   delay(3000);
   lcd.clear();
 }
-
-void DisplayPrompt() {
-  lcd.setCursor(0,0);
-  lcd.print("Please scan RFID tag");
-  lcd.setCursor(0,1);
-  lcd.print("on the reader.");
-}
-
-void DisplayReading() {
-  lcd.setCursor(3,0);
-  lcd.print("READING");
-}
