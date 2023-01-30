@@ -64,33 +64,33 @@ void loop() {
 
 void DisplayAuthorized(){
     lcd.setCursor(5,0);
-    delay(1000); // 1-second delay
+    delay(500); // 1-second delay
     lcd.print("ID IS");
 
     lcd.setCursor(3,1);
-    delay(1000); // 1-second delay
+    delay(500); // 1-second delay
     lcd.print("AUTHORIZED");
   	digitalWrite(11, HIGH);
-  	delay(5000);
+  	delay(3000);
   	digitalWrite(11, LOW);
 
-    delay(3000); // 3-second delay
+    delay(1000); // 3-second delay
     lcd.clear();
 }
 
 void DisplayInvalid() {
     lcd.setCursor(5,0);
-    delay(1000); // 1-second delay
+    delay(500); // 1-second delay
     lcd.print("ID IS");
 
     lcd.setCursor(4,1);
-    delay(1000); // 1-second delay
+    delay(500); // 1-second delay
     lcd.print("INVALID");
   	digitalWrite(13, HIGH);
-  	delay(5000);
+  	delay(3000);
   	digitalWrite(13, LOW); 
 
-    delay(3000); // 3-second delay
+    delay(1000); // 3-second delay
     lcd.clear();
 }
 
@@ -102,17 +102,17 @@ void DisplayCountdown() {
     lcd.setCursor(1,1);
     lcd.print("WILL CLOSE IN:");
 
-    delay(3000); // 3-second delay
+    delay(2000); // 3-second delay
     lcd.clear();
 
     digitalWrite(11, HIGH); 
 
     lcd.setCursor(5,0);
     lcd.print("THREE");
-    delay(1000);     
+    delay(500);     
 
     digitalWrite(11, LOW);
-    delay(1000);
+    delay(500);
 
     lcd.clear();
 
@@ -120,10 +120,10 @@ void DisplayCountdown() {
 
     lcd.setCursor(6,0);
     lcd.print("TWO");
-    delay(1000);    
+    delay(500);    
 
     digitalWrite(12, LOW);   
-    delay(1000);
+    delay(500);
 
     lcd.clear();
 
@@ -131,18 +131,18 @@ void DisplayCountdown() {
 
     lcd.setCursor(6,0);
     lcd.print("ONE");
-    delay(1000);       
+    delay(500);       
 
     digitalWrite(13, LOW);   
-    delay(1000);
+    delay(500);
 
     lcd.clear();
 
-    delay(1000); 
+    delay(500); 
 
     lcd.setCursor(5,0);
     lcd.print("CLOSED");
-    delay(3000);
+    delay(2000);
     lcd.clear();
 }
 	
